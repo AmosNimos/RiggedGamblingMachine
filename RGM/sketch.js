@@ -224,6 +224,7 @@ function Luck(){
 
 //detect when mouse is pressed
 function mousePressed(){
+  fullscreen(true);
   if(Start==false && JackPot<=0){
     fx+=0.5;
     Start=true;
@@ -231,6 +232,7 @@ function mousePressed(){
 }
 
 function keyPressed() {
+  fullscreen(true);
   if (keyCode === ENTER || keyCode === 32) {
     if(Start==false && JackPot<=0){
       fx+=0.5;
